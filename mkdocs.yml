@@ -1,0 +1,15 @@
+site_name: Sensing GO Library
+theme:
+  name: material
+
+markdown_extensions:
+- smarty
+- codehilite:
+    guess_lang: true
+
+nav:
+  - 'Overview': index.md
+  - 'Support': support.md
+  - 'Stack Overflow ⏏': https://stackoverflow.com/questions/tagged/okhttp?sort=active
+  - 'Android':
+    - 'Install': android_install.md
