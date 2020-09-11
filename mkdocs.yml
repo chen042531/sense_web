@@ -1,15 +1,56 @@
 site_name: Sensing GO Library
+site_url: https://square.github.com/
+repo_name: Sensing GO Library
+repo_url: https://github.com/
+site_description: "An HTTP & HTTP/2 client for Android and Java applications"
+site_author: Square, Inc.
+remote_branch: gh-pages
+
+copyright: 'Copyright &copy; 2020 lab, Inc.'
+
 theme:
   name: material
+  favicon: images/icon-square.png
+  logo: images/icon-square.png
+  palette:
+    accent: 'white'
 
 markdown_extensions:
-- smarty
-- codehilite:
-    guess_lang: true
+  - smarty
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - tables
 
 nav:
-  - 'Overview': index.md
-  - 'Support': support.md
+  - '總覽': index.md
+  - '支援': support.md
   - 'Stack Overflow ⏏': https://stackoverflow.com/questions/tagged/okhttp?sort=active
   - 'Android':
-    - 'Install': android_install.md
+    - '安裝方法': android_install.md
+    - '資料收集'
+    - '資料傳輸'
+    - '功能擴充'
+  - 'iOS':
+    - '安裝方法': iOS/iOS_install.md
+    - '資料收集'
+    - '資料傳輸'
+  - 'Flutter':
+    - '安裝方法': android_install.md
+    - '資料收集'
+    - '資料傳輸'
+  - 'React Native':
+    - '安裝方法': android_install.md
+    - '資料收集'
+    - '資料傳輸'
